@@ -32,7 +32,6 @@ class Chatroom {
 
   updateRoom(room) {
     this.room = room;
-    console.log('Room Updated')
     if(this.unsub) {
       this.unsub()
     }
@@ -40,5 +39,6 @@ class Chatroom {
 
   updateUsername(username) {
     this.username = username
+    localStorage.setItem('username', username)
   }
 }

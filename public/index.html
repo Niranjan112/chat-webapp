@@ -2,6 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="chat.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -19,7 +20,7 @@
       <button class="btn" id="general">#general</button>
       <button class="btn" id="gaming">#gaming</button>
       <button class="btn" id="music">#music</button>
-      <button class="btn" id="ninjas">#ninjas</button>
+      <button class="btn" id="travel">#travel</button>
     </div>
 
     <!-- chat list / window -->
@@ -28,7 +29,7 @@
     </div>
 
     <!-- new chat form -->
-    <form class="new-chat my-3">
+    <form class="new-chat my-3" autocomplete="off">
       <div class="input-group">
         <div class="input-group-prepend">
           <div class="input-group-text">Your message:</div>
@@ -51,11 +52,12 @@
           <input type="submit" class="btn" value="update">
         </div>
       </div>
-      <div class="update-mssg"></div>
+      <!-- <div class="update-msg"></div> -->
+      <div class="update-msg alert-success" role="alert"></div>
     </form>
   </div>
 
-<script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
 
